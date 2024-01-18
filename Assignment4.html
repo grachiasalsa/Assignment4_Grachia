@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time COVID-19 Data</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="Assignment4.css">
+
+  <body style="background-color: #b08968;">
+    <div class="container d-flex justify-content-center mt-5">
+    <div class="card shadow">
+    <div class="card-body" id="card-body">
+        <p class="text-center">
+            <b>Covid - 19 Tracker</b>
+        </p>
+            
+    <div class="input-group mb-3">
+    <input type="text" class="form-control mx-3 rounded-pill" placeholder="Enter a Country" aria-label="Recipient's username" aria-describedby="button-addon2" id="input-data">
+    <button class="btn rounded-pill h-25" type="button" id="button-addon2" style="background-color: #7371fc; color: white;" onclick=fetchData()>Get Data</button>
+    </div>
+
+    <div class="container text-center">
+        <div class="row mt-5">
+          <div class="col">
+            <div class="card">
+                <div class="card-body" id="active-cases">
+                <i class="bi bi-speedometer2" id="active-cases-icon"></i>
+                  <p>Active Cases</p>
+                  <p id="active-cases-text"></p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                <div class="card-body" id="new-cases">
+                <i class="bi bi-plus-circle" id="new-cases-icon"></i>
+                  <p>New Cases</p>
+                  <p id="new-cases-text"></p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                <div class="card-body" id="recovered-cases">
+                <i class="bi bi-check2-circle" id="recovered-cases-icon"></i>
+                  <p>Recovered Cases</p>
+                  <p id="recovered-cases-text"></p>
+                </div>
+              </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body" id="total-cases">
+                <i class="bi bi-list" id="total-cases-icon"></i>
+                  <p>Total Cases</p>
+                  <p id="total-cases-text"></p>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" id="total-deaths">
+                <i class="bi bi-exclamation-diamond-fill" id="total-deaths-icon"></i>
+                  <p>Total Deaths</p> 
+                  <p id="total-deaths-text"></p>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" id="total-tests">
+                <i class="bi bi-person-plus-fill" id="total-tests-icon"></i>
+                  <p>Total Tests</p>
+                  <p id="total-tests-text"></p>
+                </div>
+              </div>
+  </div>
+    </div>
+    </div>
+
+    <div id="dataCovid"></div>
+    
+    </div>
+    </div>
+    </div>
+
+<script src="Assignment4.js"></script>
+</body>
+</html> 

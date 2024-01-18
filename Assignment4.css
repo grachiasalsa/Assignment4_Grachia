@@ -1,0 +1,63 @@
+#active-cases {
+    color: yellow;
+    border-radius: 10px;
+    background-color: red;
+}
+
+#active-cases-icon {
+    font-size: 40px;
+}
+
+#new-cases {
+    color: green;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+#new-cases-icon {
+    font-size: 40px;
+}
+
+#recovered-cases {
+    color: red;
+    border-radius: 10px;
+    background-color: green;
+}
+
+#recovered-cases-icon {
+    font-size: 40px;
+}
+
+#total-cases {
+    color: white;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+#total-cases-icon {
+    font-size: 40px;
+}
+
+#total-deaths {
+    color: cornsilk;
+    border-radius: 10px;
+    background-color: orangered;
+}
+
+#total-deaths-icon {
+    font-size: 40px;
+}
+
+#total-tests {
+    color: darkgoldenrod;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+
+#total-tests-icon {
+    font-size: 40px;
+}
+
+#card-body {
+    background-color: bisque;
+}
